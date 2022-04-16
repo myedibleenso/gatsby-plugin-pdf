@@ -102,7 +102,7 @@ module.exports = {
 - `filePrefix` <[string]> Optional prefix for exported PDF file.
 - `outputPath` <[string]> Optional path where to store generated PDFs. Relative to current project dir. Defaults to `/public/exports`.
 - `paths` <[Array]<[string]>> Array of page paths to convert to PDF. Path have to start with a leading /. You can pass nested paths like '/path/subpath'. For the root path use just single '/'. Either `allPages` or `paths` property must be specified.
-- `pdfOptions` <[Object]> Optional configuration. See pdf puppeteer options: https://github.com/puppeteer/puppeteer/blob/v5.5.0/docs/api.md#pagepdfoptions.
+- `pdfOptions` <[Object]> Optional configuration. See pdf puppeteer options: https://github.com/puppeteer/puppeteer/blob/v10.2.0/docs/api.md#pagepdfoptions.
 
 ## Contribution
 

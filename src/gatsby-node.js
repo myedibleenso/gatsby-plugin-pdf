@@ -91,7 +91,7 @@ exports.pluginOptionsSchema = ({ Joi }) => {
 				`Array of page paths to convert to PDF. Path have to start with a leading /. You can pass nested paths like '/path/subpath'. For the root path use just single '/'.`
 			),
 		pdfOptions: Joi.object().description(
-			`See pdf puppeteer options: https://github.com/puppeteer/puppeteer/blob/v5.5.0/docs/api.md#pagepdfoptions.`
+			`See pdf puppeteer options: https://github.com/puppeteer/puppeteer/blob/v10.2.0/docs/api.md#pagepdfoptions.`
 		),
 		styleTagOptions: Joi.object({
 			url: Joi.string().description(`URL of the <link> tag`),
@@ -100,7 +100,7 @@ exports.pluginOptionsSchema = ({ Joi }) => {
 			),
 			content: Joi.string().description(`Raw CSS content to be injected into frame.`),
 		}).description(
-			`See addStyleTag puppeteer options: https://github.com/puppeteer/puppeteer/blob/v5.5.0/docs/api.md#pageaddstyletagoptions.`
+			`See addStyleTag puppeteer options: https://github.com/puppeteer/puppeteer/blob/v10.2.0/docs/api.md#pageaddstyletagoptions.`
 		),
 	});
 };

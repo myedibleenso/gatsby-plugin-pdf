@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "fs-extra": "^9.0.1",
-    "puppeteer": "^5.4.1"
+    "puppeteer": "^10.2.0"
   },
   "scripts": {
     "build": "babel src --out-dir . --ignore **/*.test.js --root-mode upward",

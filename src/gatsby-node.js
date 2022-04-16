@@ -25,16 +25,17 @@ const generatePdf = async ({
 }) => {
 	const currentDir = process.cwd();
 	const browser = await puppeteer.launch({ headless: true });
-	const page = await browser.newPage();
+	//const page = await browser.newPage();
 	const htmlPath = path.join(currentDir, 'public', pagePath, 'index.html');
+	const page = await browser.goto(htmlPath);
 	const downloadDir = path.join(currentDir, outputPath);
 
 	if (!fs.existsSync(downloadDir)) {
 		fs.mkdirSync(downloadDir);
 	}
 
-	const contentHtml = fs.readFileSync(htmlPath, 'utf8');
-	await page.setContent(contentHtml);
+	//const contentHtml = fs.readFileSync(htmlPath, 'utf8');
+	//await page.setContent(contentHtml);
 
 	if (styleTagOptions) {
 		await page.addStyleTag(styleTagOptions);

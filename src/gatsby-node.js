@@ -27,7 +27,7 @@ const generatePdf = async ({
 	const browser = await puppeteer.launch({ headless: true });
 	//const page = await browser.newPage();
 	const htmlPath = path.join(currentDir, 'public', pagePath, 'index.html');
-	const page = await browser.goto(htmlPath, { "timeout": 10000, "waitUntil" : "networkidle2" });
+	const page = await browser.goto(htmlPath, { "timeout": 10000, "waitUntil" : "networkidle0" });
 	const downloadDir = path.join(currentDir, outputPath);
 
 	if (!fs.existsSync(downloadDir)) {
